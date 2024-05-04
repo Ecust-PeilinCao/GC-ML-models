@@ -20,7 +20,7 @@ X = data.drop('Experimental', axis=1)
 Y = data['Experimental']
 
 
-regressor = RandomForestRegressor(n_estimators=39, n_jobs=-1, random_state=0)
+regressor = RandomForestRegressor(n_estimators=30, n_jobs=-1, random_state=0)
 model = regressor.fit(X, Y)
 train = model.predict(X)
 train = pd.DataFrame(train)
